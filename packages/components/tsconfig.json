@@ -1,0 +1,11 @@
+{
+  "extends": "@acme/configs/typescript/library.json",
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "paths": {
+      "@react-ui/*": ["@react-ui/*", "src/@react-ui/*"]
+    }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "tailwind.config.mjs"]
+}

@@ -1,0 +1,6 @@
+{
+  "name": "@acme/configs",
+  "description": "A set off default settings for any apps and projects.",
+  "version": "1.0.0",
+  "dependencies": {}
+}

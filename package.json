@@ -1,0 +1,37 @@
+{
+  "name": "fullstack-template",
+  "description": "A template for start full stack projects with bun.js and react.",
+  "authors": "Matheus Littig",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "version": "1.0.0",
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "lint": "turbo lint"
+  },
+  "packageManager": "bun@1.0.25",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "turbo": "^1.12.3"
+  },
+  "devDependencies": {
+    "@acme/configs": "workspace:*",
+    "@biomejs/biome": "1.5.3",
+    "@commitlint/cli": "^18.6.0",
+    "@commitlint/config-conventional": "^18.6.0",
+    "lint-staged": "^15.2.2"
+  },
+  "lint-staged": {
+    "apps/*.{ts,tsx}": [
+      "@biomejs/biome format apps --write"
+    ],
+    "packages/*.{ts,tsx}": [
+      "@biomejs/biome format package --write"
+    ]
+  }
+}

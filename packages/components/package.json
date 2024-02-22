@@ -1,0 +1,30 @@
+{
+  "name": "@acme/components",
+  "description": "Components set for build user interfaces in different enviroments.",
+  "version": "1.0.0",
+  "exports": {
+    "./react/*": "./src/@react-ui/*",
+    "./react": "./src/@react-ui/index.ts",
+    "./tailwind.config.cjs": "./tailwind.config.cjs"
+  },
+  "typesVersions": {
+    "*": {
+      "react": ["./src/react/index.ts"]
+    }
+  },
+  "dependencies": {
+    "@radix-ui/react-slot": "^1.0.2",
+    "@types/react": "^18.2.57",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.0",
+    "react": "^18.2.0",
+    "tailwind-merge": "^2.2.1",
+    "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "@acme/shared": "workspace:*",
+    "autoprefixer": "^10.4.17",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.1"
+  }
+}

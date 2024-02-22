@@ -1,0 +1,22 @@
+{
+  "name": "@acme/shared",
+  "description": "A dedicated package to global defaults between applications.",
+  "version": "1.0.0",
+  "exports": {
+    "./constants/*": "./src/constants/*",
+    "./fonts/*": "./src/fonts/*",
+    "./theme/*": "./src/tokens/theme.ts",
+    "./typograph/*": "./src/tokens/typograph.ts",
+    "./animation/*": "./src/tokens/animation.ts",
+    "./root.css": "./src/tokens/root.css"
+  },
+  "typesVersions": {
+    "*": {
+      "react": ["./src/constants/index.ts"],
+      "theme": ["./src/tokens/theme.ts"],
+      "typograph": ["./src/tokens/typograph.ts"],
+      "animation": ["./src/tokens/animation.ts"]
+    }
+  },
+  "dependencies": {}
+}

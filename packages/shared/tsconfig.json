@@ -1,0 +1,9 @@
+{
+  "extends": "@acme/configs/typescript/library.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@shared/*": ["src/*", "../../packages/shared/src/*"]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+	"$schema": "https://biomejs.dev/schemas/1.5.3/schema.json",
+	"organizeImports": {
+		"enabled": true
+	},
+	"javascript": {
+		"formatter": {
+			"quoteStyle": "single",
+			"enabled": true,
+			"semicolons": "asNeeded",
+			"lineWidth": 120
+		}
+	},
+  "files": {
+    "ignore": ["tailwind.config.cjs"]
+  },
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"recommended": true
+		}
+	}
+}

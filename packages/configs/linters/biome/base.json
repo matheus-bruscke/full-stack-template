@@ -11,9 +11,9 @@
 			"lineWidth": 120
 		}
 	},
-  "files": {
-    "ignore": ["tailwind.config.cjs"]
-  },
+	"files": {
+		"ignore": ["tailwind.config.cjs", ".next/*", "node_modules/*"]
+	},
 	"linter": {
 		"enabled": true,
 		"rules": {

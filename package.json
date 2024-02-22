@@ -8,10 +8,10 @@
   ],
   "version": "1.0.0",
   "scripts": {
-    "prepare": "husky install",
     "build": "turbo build",
     "dev": "turbo dev",
-    "lint": "turbo lint"
+    "lint": "turbo lint",
+    "prepare": "husky"
   },
   "packageManager": "bun@1.0.25",
   "engines": {
@@ -28,11 +28,8 @@
     "lint-staged": "^15.2.2"
   },
   "lint-staged": {
-    "apps/*.{ts,tsx}": [
-      "@biomejs/biome format apps --write"
-    ],
-    "packages/*.{ts,tsx}": [
-      "@biomejs/biome format package --write"
-    ]
-  }
+		"*.{js,ts,tsx,json,md,mdx}": [
+			"biome check --apply --no-errors-on-unmatched"
+		]
+	}
 }

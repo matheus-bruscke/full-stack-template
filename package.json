@@ -10,8 +10,7 @@
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev",
-    "lint": "turbo lint",
-    "prepare": "husky"
+    "lint": "turbo lint"
   },
   "packageManager": "bun@1.0.25",
   "engines": {

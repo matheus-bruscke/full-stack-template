@@ -3,8 +3,8 @@
   "version": "1.0.50",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "init": "docker-compose up -d && bunx prisma generate",
-    "dev": "bun run init && bun run --watch src/index.ts"
+    "setup": "docker-compose up -d && bunx prisma generate",
+    "dev": "bun run setup && bun run --watch src/index.ts"
   },
   "dependencies": {
     "@prisma/client": "5.10.1",
